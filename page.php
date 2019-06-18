@@ -49,7 +49,7 @@ if($autenticado){
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://laurinne-portifolio.herokuapp.com/assets/css/style.css">
 	<title>Teste</title>
 </head>
 <body class="body">
