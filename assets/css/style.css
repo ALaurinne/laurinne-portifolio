@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Montserrat');
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background: #da5a6e;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        flex-flow: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+ul {
+    font-size: 25px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    padding: 10px;
+}
+
+ul div {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #94162c;
+}
+
+section.header {
+    width: 100%;
+    min-height: 100VH;
+    background-image: url(../img/lauri.jpeg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 75px;
+    text-shadow: 2px 3px 3px black;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+p.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 2px 3px 3px black;
+}
+
+section {
+    box-sizing: border-box;
+    background: #abd2de;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 83px;
+    align-items: center;
+}
+
+h2,
+h3,
+h4 {
+    font-size: xx-large;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+}
+
+p {
+    line-height: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 20px;
+    }
+    section {
+        padding: 68px 27px;
+    }
+}
+
+section#curious {
+    background: #b76650;
+}
+
+section#hab {
+    background: #476440;
+}
+
+div#form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+form {
+    width: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px;
+}
+
+form * {
+    margin: 5px;
+}
+
+input[type="submit"] {
+    background-color: pink;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover {
+    transition: background 0.5s linear;
+    background-color: rgb(202, 101, 118);
+    transform: scale(1.2, 1.2);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.progress {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.done {
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-color: black;
+}
+
+.undone {
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.308);
+}
